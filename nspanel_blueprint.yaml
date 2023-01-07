@@ -2152,7 +2152,7 @@ action:
           - service: "{{ command_text_printf }}"
             data:
               component: home.loading
-              message: "Loading - PLS WAIT!"
+              message: "Een ogenblik AUB!"
 
           ##### NSPanel boot init Date #####
           - delay:
@@ -2380,6 +2380,10 @@ action:
           - service: "{{ command_text_printf }}"
             data:
               component: home.time
+              message: "{{ time }}"
+          - service: "{{ command_text_printf }}"
+            data:
+              component: screensaver.time
               message: "{{ time }}"
           
           #####  NSPanel boot init - Humidity #####
@@ -3698,6 +3702,10 @@ action:
             data:
               component: home.date
               message: "{{ date01_mui }}"
+          - service: "{{ command_text_printf }}"
+            data:
+              component: screensaver.time
+              message: "{{ time }}"
 
 
       ##### Humidity #####
@@ -5290,6 +5298,12 @@ action:
               ## PAGE SCREENSAVER ## 
               - conditions: '{{ trigger.event.data.new_state.state == page_screensaver }}'
                 sequence:
+
+
+
+
+
+
 
               ## PAGE LIGHTSETTUNGS ## 
               - conditions: '{{ trigger.event.data.new_state.state == page_lightsettings }}'
