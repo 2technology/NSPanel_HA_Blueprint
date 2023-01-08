@@ -1,5 +1,6 @@
 
 - Added a digital clock to the screensaver
+- changed brightness of screensaver to 1 (in stead of 0)
 
 # NSPanel Custom with HA Blueprint
 
