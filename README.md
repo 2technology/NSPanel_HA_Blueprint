@@ -1,3 +1,6 @@
+
+Added a digital clock to the screensaver
+
 # NSPanel Custom with HA Blueprint
 
 
